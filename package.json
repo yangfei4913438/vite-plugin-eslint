@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-eslint",
+  "name": "@yf-ui/vite-plugin-eslint",
   "version": "1.8.1",
   "description": "ESLint plugin for vite.",
   "author": "Xiang Gao",
@@ -9,6 +9,10 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": {
+        "require": "./dist/index.d.ts",
+        "import": "./dist/index.d.ts"
+      },
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
@@ -28,7 +32,10 @@
     "vite-plugin"
   ],
   "homepage": "https://github.com/gxmari007/vite-plugin-eslint",
-  "repository": "git+https://github.com:gxmari007/vite-plugin-eslint.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gxmari007/vite-plugin-eslint.git"
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -59,5 +66,8 @@
   "peerDependencies": {
     "eslint": ">=7",
     "vite": ">=2"
+  },
+  "bugs": {
+    "url": "https://github.com/gxmari007/vite-plugin-eslint/issues"
   }
 }
