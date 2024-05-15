@@ -1,9 +1,10 @@
 {
   "name": "@yf-ui/vite-plugin-eslint",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "ESLint plugin for vite.",
   "author": "Xiang Gao",
   "license": "MIT",
+  "private": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
